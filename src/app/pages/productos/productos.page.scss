@@ -1,0 +1,25 @@
+//cuerpo general de la pagina
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+  ion-content {
+      --background: #ffffff;
+    }
+  
+  ion-grid {
+    padding: 0;
+  }
+
+  .precio{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .img-zapatilla {
+    width: 100%;
+    height: 145px;
+  }

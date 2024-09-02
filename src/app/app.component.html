@@ -1,0 +1,75 @@
+<ion-app>
+  <!-- Menu principal -->
+<ion-menu-toggle>
+    <ion-menu contentId="main-content" side="start">
+      <ion-header>
+        <ion-toolbar>
+          <img class="img-logo" src="assets/img/LogoMagicSports.png" alt="MagicSports" />
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="ion-padding">
+        <ion-list>
+          <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Inicio</ion-label>
+          </ion-item>
+          <ion-item routerLink="/productos">
+            <ion-icon name="cube"></ion-icon>
+            <ion-label>Productos</ion-label>
+          </ion-item>
+          <ion-item routerLink="/contacto">
+            <ion-icon name="clipboard"></ion-icon>
+            <ion-label>Contacto</ion-label>
+          </ion-item>
+          <ion-item routerLink="/carrito">
+            <ion-icon name="cart"></ion-icon>
+            <ion-label>Carrito</ion-label>
+          </ion-item>
+          <ion-item routerLink="/gestion-productos">
+            <ion-icon name="apps"></ion-icon>
+            <ion-label>Gestionar productos</ion-label>
+          </ion-item>
+          <ion-item routerLink="/gestion-usuarios">
+            <ion-icon name="build"></ion-icon>
+            <ion-label>Gestionar usuarios</ion-label>
+          </ion-item>
+        </ion-list>
+
+        <div class="ion-text-center">
+          <ion-button fill="outline" color="primary" routerLink="/login">
+            Iniciar Sesión
+          </ion-button>
+          <p class="derechos">&copy; 2024 Magic Sports. Todos los derechos reservados.</p>
+        </div>
+      </ion-content>
+    </ion-menu>
+
+    <!-- Perfil -->
+    <ion-menu contentId="main-content" side="end">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Opciones de Usuario</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="ion-padding">
+        <ion-list>
+          <ion-item routerLink="/perfil-usuario">
+            <ion-icon name="person"></ion-icon>
+            <ion-label>Perfil</ion-label>
+          </ion-item>
+          <ion-item routerLink="/ajustes-usuario">
+            <ion-icon name="build"></ion-icon>
+            <ion-label>Ajustes</ion-label>
+          </ion-item>
+          <ion-item routerLink="/ayuda-usuario">
+            <ion-icon name="medkit"></ion-icon>
+            <ion-label>Ayuda</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+</ion-menu-toggle>
+<ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

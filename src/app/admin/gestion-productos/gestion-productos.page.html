@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Gestionar productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" routerLink="/agregar-productos">
+    Agregar Producto
+  </ion-button>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <ion-img src="" alt=""/>
+        <h2>Producto 1</h2>
+        <p>Descripción</p>
+        <p>Precio</p>
+      </ion-label>
+      <ion-button slot="end">
+        Modificar
+      </ion-button>
+      <ion-button slot="end" color="danger" (click)="eliminarProducto()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <ion-img src="" alt=""/>
+        <h2>Producto 2</h2>
+        <p>Descripción</p>
+        <p>Precio</p>
+      </ion-label>
+      <ion-button slot="end">
+        Modificar
+      </ion-button>
+      <ion-button slot="end" color="danger" (click)="eliminarProducto()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <ion-img src="" alt=""/>
+        <h2>Producto 3</h2>
+        <p>Descripción</p>
+        <p>Precio</p>
+      </ion-label>
+      <ion-button slot="end">
+        Modificar
+      </ion-button>
+      <ion-button slot="end" color="danger" (click)="eliminarProducto()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <ion-img src="" alt=""/>
+        <h2>Producto 4</h2>
+        <p>Descripción</p>
+        <p>Precio</p>
+      </ion-label>
+      <ion-button slot="end">
+        Modificar
+      </ion-button>
+      <ion-button slot="end" color="danger" (click)="eliminarProducto()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

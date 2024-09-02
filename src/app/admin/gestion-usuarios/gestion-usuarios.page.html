@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Gestionar Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Usuario1</h2>
+        <p>email</p>
+        <p>número</p>
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="eliminarUsuario()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Usuario2</h2>
+        <p>email</p>
+        <p>número</p>
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="eliminarUsuario()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Usuario3</h2>
+        <p>email</p>
+        <p>número</p>
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="eliminarUsuario()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h2>Usuario4</h2>
+        <p>email</p>
+        <p>número</p>
+      </ion-label>
+      <ion-button slot="end" color="danger" (click)="eliminarUsuario()">
+        Eliminar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <img src="assets/img/logo-ajustes.png" alt="Avatar" class="logo-ajustes">
+    <ion-list-header>General</ion-list-header>
+
+    <ion-item>
+      <ion-label>Moneda</ion-label>
+      <ion-select>
+        <ion-select-option value="usd">USD</ion-select-option>
+        <ion-select-option value="eur">EUR</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cerrar Sesion</ion-label>
+      <ion-button fill="outline" slot="end" routerLink="/login">Cerrar Sesion</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

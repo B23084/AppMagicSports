@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Carrito</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="danger" (click)="vaciarCarrito()">Vaciar Carrito</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <img class="img-zapatillaCarrito" src="assets/img/zapatilla1.avif" alt="">
+        <h2>Producto1</h2>
+        <p>Precio: 200.000 CLP</p>
+      </ion-label>
+      <ion-button (click)="eliminarProducto()">Eliminar</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <img class="img-zapatillaCarrito" src="assets/img/zapatilla2.jpeg" alt="">
+        <h2>Producto2</h2>
+        <p>Precio: 150.000 CLP</p>
+      </ion-label>
+      <ion-button (click)="eliminarProducto()">Eliminar</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <img class="img-zapatillaCarrito" src="assets/img/zapatilla3.webp" alt="">
+        <h2>Producto3</h2>
+        <p>Precio: 120.000 CLP</p>
+      </ion-label>
+      <ion-button (click)="eliminarProducto()">Eliminar</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Total: 470.000 CLP</ion-title>
+      <ion-buttons slot="end">
+        <ion-button color="primary">Finalizar Compra</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>

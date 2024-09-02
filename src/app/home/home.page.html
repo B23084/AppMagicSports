@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Pagina de inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <img class="img-logo" src="assets/img/LogoMagicSports.png" alt="Magic Sports logo" />
+        <h1>Bienvenido a Magic Sports</h1>
+        <p>Acompañandote hacia tu mejor versión</p>
+        <ion-button expand="full" routerLink="/productos">Conoce nuestros productos</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img class="img-home" src="assets/img/fondoDeporte.jpg" alt="Imagen de fondo" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h2>¿Tienes problemas con alguno de nuestros productos?</h2>
+        <p>Nuestros ejecutivos están listos para ayudarte con lo que necesites.</p>
+        <ion-button expand="full" routerLink="/contacto">Contacto</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

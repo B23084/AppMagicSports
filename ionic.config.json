@@ -1,0 +1,7 @@
+{
+  "name": "Appzapatillas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

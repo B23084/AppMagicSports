@@ -1,0 +1,36 @@
+//cuerpo general de la pagina
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+  ion-content {
+      --background: #ffffff;
+    }
+  
+  ion-item {
+    --background: #ffffff;
+    --color: #000000;
+  }
+
+  //seccion carrito de compras
+  .img-zapatillaCarrito {
+    width: 30%;
+  }
+
+  //p general
+  p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin: 0;
+    padding: 0 4px; 
+  }
+  
+  //h5 general
+  h2 {
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 4px;
+  }

@@ -1,0 +1,30 @@
+
+ion-toolbar {
+  --background: #000000;
+  --color: #ffffff;
+}
+
+  ion-content {
+      --background: #ffffff;
+    }
+   .centered-404 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;  // Asegura que ocupe toda la altura de la pantalla
+      text-align: center;
+    }
+    
+    .centered-404 h1 {
+      font-size: 10rem;  // Tamaño grande para el "404"
+      margin: 0;
+      color: #000;  // Ajusta el color según tu diseño
+    }
+    
+    .centered-404 p {
+      font-size: 2rem;  // Tamaño del subtítulo
+      margin-top: 1rem;
+      color: #666;  // Ajusta el color según tu diseño
+    }
+     

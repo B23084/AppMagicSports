@@ -1,0 +1,36 @@
+//cuerpo general de la pagina
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+  ion-content {
+      --background: #ffffff;
+    }
+
+  .logo-usuario {
+    width: 40%;
+    height: auto; 
+  }
+
+  //parrafo
+  p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin: 0;
+    padding: 0 4px; 
+  }
+  
+  //general
+  h2 {
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+  
+  ion-item {
+    --background: #ffffff;
+    --color: #000000;
+  }

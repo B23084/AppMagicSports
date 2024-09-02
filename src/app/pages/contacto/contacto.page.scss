@@ -1,0 +1,41 @@
+//cuerpo general de la pagina
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+  ion-content {
+      --background: #ffffff;
+    }
+
+  //p general
+  p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin: 0;
+    padding: 0 4px; 
+  }
+
+  .contacto-descripcion {
+    margin-bottom: 1rem;
+  }
+  
+  //h5 general
+  h1 {
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  //seccion contacto
+  .lista-contacto {
+    padding: 8px;
+    background-color: #ffffff;
+  }
+  
+  ion-item {
+    --background: #ffffff;
+    --color: #000000;
+  }

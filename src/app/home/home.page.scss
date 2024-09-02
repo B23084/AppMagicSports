@@ -1,0 +1,42 @@
+//cuerpo de la pagina
+
+ion-toolbar {
+  --background: #000000;
+  --color: #ffffff;
+}
+
+  ion-content {
+    --background: #ffffff;
+  }
+
+  ion-grid {
+    padding: 0;
+  }
+
+  //tamaño logo de la empresa
+  .img-logo{
+    width: 40%;
+    height: auto; 
+  }
+
+  //color p (letras pequeñas)
+  p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin: 0;
+    padding: 0 4px; 
+  }
+
+  //general
+  h1, h2 {
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  //contorno imagen pagina de inicio
+  .img-home{
+    width: 100%;
+    border: 1px solid #060606;
+  }

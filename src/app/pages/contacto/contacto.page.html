@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="contacto-background">
+  <div>
+    <h1>¡Estamos aqui para ayudarte!</h1>
+    <p class="contacto-descripcion">
+      Si tienes alguna duda o problema relacionado con nuestros productos, completa el siguiente formulario. 
+      Nuestro equipo se comunicará contigo lo antes posible.
+    </p>
+
+    <form (ngSubmit)="contactoForm()">
+      <ion-list class="lista-contacto">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <br>
+          <ion-input type="text" required [(ngModel)]="formulario.nombre" name="nombre" placeholder="Ingrese su nombre"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <br>
+          <ion-input type="text" required [(ngModel)]="formulario.apellido" name="apellido" placeholder="Ingrese su apellido"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <br>
+          <ion-input type="email" required [(ngModel)]="formulario.email" name="email" placeholder="Ingrese su correo"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Telefono</ion-label>
+          <br>
+          <ion-input type="tel" required [(ngModel)]="formulario.telefono" name="telefono" placeholder="Ingrese su número"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Comuna</ion-label>
+          <br>
+          <ion-input type="text" required [(ngModel)]="formulario.comuna" name="comuna" placeholder="Ingrese su comuna"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Descripción del Problema</ion-label>
+          <br>
+          <ion-textarea rows="6" required [(ngModel)]="formulario.descripcion" name="descripcion" placeholder="Cuéntenos su problema"></ion-textarea>
+        </ion-item>
+      </ion-list>
+
+      <ion-button expand="full" color="success" class="contacto-button" type="submit">
+        Enviar
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

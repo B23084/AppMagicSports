@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recupera tu contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form (ngSubmit)="enviarCorreo()">
+    <img class="img-recuperarContra" src="assets/img/logoRecuperarContra.png" alt="Logo de Recuperacion de Contraseña">
+    <ion-item>
+      <h5>Recuerde que su correo debe de estar registrado anteriormente!</h5>
+      <ion-label position="floating">Ingrese su correo electronico</ion-label>
+      <br>
+      <ion-input type="email" [(ngModel)]="email" name="correo" required placeholder="ejemplo@gmail.com"></ion-input>
+    </ion-item>
+    
+    <ion-button expand="full" type="submit">Enviar</ion-button>
+  </form>
+
+  <ion-toast></ion-toast>
+</ion-content>
